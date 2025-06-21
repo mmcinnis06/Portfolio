@@ -3,353 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 Simple Ways to Make Your Home More Sustainable</title>
+    <title>Your Name | AI-Enhanced Virtual Assistant Portfolio</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
+        /* Custom font for a professional look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text color */
         }
-        /* Chart container styles for responsiveness and consistent sizing */
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px; /* Limits max width for larger screens */
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px; /* Fixed height for charts on small screens */
-            max-height: 400px; /* Max height to prevent excessive stretching */
+        .container {
+            max-width: 1200px;
         }
-        /* Media query for larger screens to adjust chart height */
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px; /* Taller charts on medium screens and up */
-            }
+        /* Custom styles for project cards */
+        .project-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
-<body class="bg-gray-50" style="background-color: #F7F7F7;">
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-gray-800 py-6 shadow-lg">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 rounded-lg">
+                [Your Name]
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300">
+                Virtual Assistant: Content, Data & Prompting Expert
+            </p>
+        </div>
+    </header>
 
-    <!-- Main container for the entire page content -->
-    <div class="container mx-auto p-4 md:p-8">
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-6 py-12">
 
-        <!-- Header section with title and subtitle -->
-        <header class="text-center my-8 md:my-16">
-            <h1 class="text-4xl md:text-6xl font-black" style="color: #073B4C;">Make Your Home a Sustainable Haven</h1>
-            <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto" style="color: #118AB2;">Discover simple, powerful ways to reduce your carbon footprint, save money, and create a healthier living space. Small changes, big impact.</p>
-        </header>
+        <!-- About Me Section -->
+        <section class="mb-16 bg-gray-800 p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-semibold text-white mb-6 text-center md:text-left">About Me</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Hello! I'm [Your Name], a highly motivated and detail-oriented Virtual Assistant passionate about streamlining your tasks and enhancing your digital presence. My expertise lies in three key areas: <span class="font-semibold text-blue-300">impactful content creation, precise data management, and strategic prompt engineering.</span>
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed mt-4">
+                I'm committed to providing efficient, high-quality support that frees up your time and helps you achieve your business goals. My proactive approach, quick learning ability, and dedication ensure that every project is handled with meticulous care and delivered on time. While new to freelance platforms, I bring a fresh perspective and a strong commitment to learning and delivering exceptional results.
+            </p>
+        </section>
 
-        <!-- Main content area, organized in a responsive grid -->
-        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- My Projects Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-semibold text-white mb-10 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Section 1: The Power of Smart Energy -->
-            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center">
-                <div class="w-full md:w-1/2">
-                    <h2 class="text-2xl font-bold mb-2" style="color: #073B4C;">1. The Power of Smart Energy</h2>
-                    <p class="text-gray-600 mb-4">Your daily energy consumption is a major part of your carbon footprint. Simple swaps and habits in how you use electricity can lead to massive savings for both your wallet and the planet.</p>
+                <!-- Project Card 1: Eco-Friendly Blog Series -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <h3 class="text-xl font-semibold text-white mb-4">Eco-Friendly Blog Series</h3>
+                    <img src="https://placehold.co/300x200/2d3748/cbd5e0?text=Blog+Post" alt="Eco-Friendly Blog Post Sample" class="w-full h-40 object-cover rounded-md mb-4 shadow-md">
+                    <p class="text-gray-300 text-sm mb-4 flex-grow">
+                        Showcasing AI-assisted content writing for engaging, SEO-friendly blog posts on sustainable living, refined with a human touch.
+                    </p>
+                    <a href="projects/eco-friendly-blog-post/index.html" class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg">
+                        View Project
+                    </a>
                 </div>
-                <!-- Energy saving statistics -->
-                <div class="w-full md:w-1/2 grid grid-cols-2 gap-4 text-center">
-                    <div class="p-4 rounded-lg" style="background-color: #FFD166;">
-                        <span class="text-4xl font-black" style="color: #073B4C;">10%</span>
-                        <p class="font-bold mt-2" style="color: #073B4C;">Annual Savings</p>
-                        <p class="text-sm" style="color: #073B4C;">From smart thermostat use</p>
-                    </div>
-                    <div class="p-4 rounded-lg" style="background-color: #06D6A0;">
-                        <span class="text-4xl font-black" style="color: #073B4C;">40%</span>
-                        <p class="font-bold mt-2" style="color: #073B4C;">Heating/Cooling Savings</p>
-                           <p class="text-sm" style="color: #073B4C;">From proper insulation</p>
-                    </div>
+
+                <!-- Project Card 2: E-commerce Sales Data -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <h3 class="text-xl font-semibold text-white mb-4">E-commerce Sales Data Cleanup</h3>
+                    <img src="https://placehold.co/300x200/2d3748/cbd5e0?text=Data+Viz" alt="E-commerce Sales Data Sample" class="w-full h-40 object-cover rounded-md mb-4 shadow-md">
+                    <p class="text-gray-300 text-sm mb-4 flex-grow">
+                        Demonstrating precise data organization, cleaning, and basic analysis for actionable business insights.
+                    </p>
+                    <a href="projects/data-cleanup-dashboard/index.html" class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg">
+                        View Project
+                    </a>
                 </div>
-            </div>
 
-            <!-- Chart for Incandescent vs. LED Bulbs energy waste -->
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-xl font-bold text-center mb-4" style="color: #073B4C;">Incandescent vs. LED Bulbs</h3>
-                <p class="text-sm text-gray-600 text-center mb-4">Traditional bulbs waste most of their energy as heat. LEDs are vastly more efficient and last much longer, making them a bright choice for an eco-friendly home.</p>
-                <div class="chart-container h-64 md:h-72">
-                    <canvas id="energyWasteChart"></canvas>
+                <!-- Project Card 3: AI Prompt Engineering -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <h3 class="text-xl font-semibold text-white mb-4">AI Prompt Engineering Showcase</h3>
+                    <img src="https://placehold.co/300x200/2d3748/cbd5e0?text=AI+Prompts" alt="AI Prompt Engineering Sample" class="w-full h-40 object-cover rounded-md mb-4 shadow-md">
+                    <p class="text-gray-300 text-sm mb-4 flex-grow">
+                        Showcasing the creation of effective prompts to yield high-quality, tailored outputs from generative AI models.
+                    </p>
+                    <a href="projects/prompt-engineering-showcase/index.html" class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg">
+                        View Project
+                    </a>
                 </div>
+
             </div>
-            
-            <!-- Vampire Energy section -->
-            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center items-center text-center">
-                <h3 class="text-xl font-bold" style="color: #073B4C;">Beware of Vampire Energy!</h3>
-                   <p class="text-sm text-gray-600 my-4">Many electronics consume power even when turned off. Unplugging them is a simple way to stop this silent energy drain.</p>
-                <div class="text-6xl" style="color: #FF6B6B;">
-                    <!-- Unicode characters for plug and right arrow -->
-                    <span>&#128268;</span> &#10132; <span class="opacity-50">&#128268;</span>
-                </div>
-                <p class="mt-4 font-bold text-lg" style="color: #FF6B6B;">Unplug When Not In Use</p>
-            </div>
+        </section>
 
-            <!-- Section 2: Every Drop Counts (Water Conservation) -->
-            <div class="lg:col-span-1 md:col-span-2 bg-white rounded-lg shadow-lg p-6">
-                <h2 class="text-2xl font-bold mb-4 text-center" style="color: #073B4C;">2. Every Drop Counts</h2>
-                <p class="text-gray-600 text-center">Water is a finite resource. Conserving it not only protects our planet but also reduces the significant energy needed to heat it, lowering your bills and carbon footprint.</p>
-            </div>
+        <!-- Let's Connect Section -->
+        <section class="text-center bg-gray-800 p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-semibold text-white mb-6">Ready to Collaborate?</h2>
+            <p class="text-lg text-gray-300 mb-6">
+                I'm excited to partner with you and bring smart, modern solutions to your projects. Let's connect to discuss your specific needs and how I can contribute to your success!
+            </p>
+            <a href="mailto:your_email@example.com" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-xl transition duration-300 ease-in-out shadow-md hover:shadow-lg">
+                Get in Touch
+            </a>
+            <p class="text-gray-400 text-sm mt-4">
+                (Please replace `your_email@example.com` with your actual email address)
+            </p>
+        </section>
 
-            <!-- Chart for Shower vs. Bath Water Usage -->
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-xl font-bold text-center mb-4" style="color: #073B4C;">Shower vs. Bath Water Usage</h3>
-                <p class="text-sm text-gray-600 text-center mb-4">A quick shower uses significantly less water than a full bath. This simple choice saves dozens of gallons of water with every wash.</p>
-                <div class="chart-container h-64 md:h-72">
-                    <canvas id="waterUsageChart"></canvas>
-                </div>
-            </div>
-            
-            <!-- Chart for Washing Machine Energy Use -->
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-xl font-bold text-center mb-4" style="color: #073B4C;">Washing Machine Energy Use</h3>
-                   <p class="text-sm text-gray-600 text-center mb-4">The vast majority of energy used by a washing machine goes to heating the water. Washing in cold water is a powerful energy-saving hack.</p>
-                <div class="chart-container h-64 md:h-72">
-                    <canvas id="washerEnergyChart"></canvas>
-                </div>
-            </div>
-            
-            <!-- Section 3: The Reusable Revolution (3 Rs) -->
-            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
-                <h2 class="text-2xl font-bold text-center mb-4" style="color: #073B4C;">3. The Reusable Revolution</h2>
-                <p class="text-gray-600 text-center max-w-2xl mx-auto mb-6">Single-use items, especially plastic, are a major source of pollution. By choosing reusables, you directly prevent waste from entering our landfills and oceans.</p>
-                <!-- Reduce, Reuse, Recycle steps -->
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                    <div class="text-center p-6 rounded-lg" style="background-color: #06D6A0;">
-                        <p class="text-3xl font-black" style="color: #073B4C;">1. Reduce</p>
-                        <p class="mt-2" style="color: #073B4C;">Consume less to prevent waste at the source.</p>
-                    </div>
-                    <div class="text-2xl font-bold" style="color: #118AB2;">&darr;</div> <!-- Down arrow -->
-                    <div class="text-center p-6 rounded-lg" style="background-color: #FFD166;">
-                           <p class="text-3xl font-black" style="color: #073B4C;">2. Reuse</p>
-                        <p class="mt-2" style="color: #073B4C;">Choose durable items over disposable ones.</p>
-                    </div>
-                       <div class="text-2xl font-bold" style="color: #118AB2;">&darr;</div> <!-- Down arrow -->
-                    <div class="text-center p-6 rounded-lg" style="background-color: #FF6B6B;">
-                           <p class="text-3xl font-black" style="color: #073B4C;">3. Recycle</p>
-                        <p class="mt-2" style="color: #073B4C;">Properly dispose of items as a last resort.</p>
-                    </div>
-                </div>
-            </div>
+    </main>
 
-            <!-- Section 4: Clean Green (Natural Cleaners) -->
-            <div class="md:col-span-2 lg:col-span-1 bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center items-center text-center">
-                <h2 class="text-2xl font-bold mb-4" style="color: #073B4C;">4. Clean Green</h2>
-                <p class="text-gray-600">Many conventional cleaners contain harsh chemicals. Switching to natural alternatives or making your own creates a healthier home and protects our waterways.</p>
-                <!-- DIY Cleaner recipe -->
-                <div class="mt-4 w-full p-4 border-2 rounded-lg" style="border-color: #06D6A0;">
-                    <span class="font-bold text-lg" style="color: #06D6A0;">DIY All-Purpose Cleaner:</span>
-                    <p class="mt-2 text-gray-700">Vinegar + Baking Soda</p>
-                </div>
-            </div>
-
-            <!-- Section 5: The Circular Lifestyle (Recycling & Composting) -->
-            <div class="md:col-span-2 lg:col-span-2 bg-white rounded-lg shadow-lg p-6">
-                   <h2 class="text-2xl font-bold text-center mb-4" style="color: #073B4C;">5. The Circular Lifestyle</h2>
-                   <p class="text-gray-600 text-center max-w-2xl mx-auto mb-6">Embrace a mindset of circularity by making smart choices in what you buy and how you dispose of waste. Recycling and composting have enormous environmental benefits.</p>
-                   <div class="chart-container h-64 md:h-72">
-                    <canvas id="recyclingEnergyChart"></canvas>
-                </div>
-            </div>
-
-            <!-- Landfill vs. Composting comparison -->
-            <div class="lg:col-span-3 md:col-span-2 bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-xl font-bold text-center mb-4" style="color: #073B4C;">Landfill vs. Composting</h3>
-                <p class="text-sm text-gray-600 text-center mb-6">Food scraps in a landfill release methane, a powerful greenhouse gas. Composting them turns waste into a valuable resource for your garden, actively fighting climate change.</p>
-                <div class="flex flex-col md:flex-row justify-around items-stretch">
-                    <!-- Landfill box -->
-                    <div class="w-full md:w-5/12 text-center border-4 p-4 rounded-lg mb-4 md:mb-0" style="border-color: #FF6B6B;">
-                        <p class="text-5xl mb-4">&#128465;</p> <!-- Trash can emoji -->
-                        <h4 class="text-lg font-bold" style="color: #FF6B6B;">Landfill</h4>
-                        <p class="mt-2 text-gray-600">Releases harmful methane gas, contributing to global warming.</p>
-                    </div>
-                    <div class="flex items-center justify-center text-4xl font-black" style="color: #073B4C;">&#10140;</div> <!-- Right arrow -->
-                    <!-- Compost box -->
-                       <div class="w-full md:w-5/12 text-center border-4 p-4 rounded-lg" style="border-color: #06D6A0;">
-                        <p class="text-5xl mb-4">&#127811;</p> <!-- Leafy green emoji -->
-                        <h4 class="text-lg font-bold" style="color: #06D6A0;">Compost</h4>
-                        <p class="mt-2 text-gray-600">Creates nutrient-rich soil, sequestering carbon and reducing emissions.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </main>
-
-        <!-- Footer section -->
-        <footer class="text-center my-8 md:my-16">
-               <h2 class="text-3xl md:text-4xl font-black" style="color: #073B4C;">Your Journey Starts Now</h2>
-               <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto" style="color: #118AB2;">Creating an eco-friendly home is about progress, not perfection. Every small change you make adds up to a significant positive impact on our planet.</p>
-               <a href="#" class="inline-block mt-6 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105" style="background-color: #118AB2;">Explore Sustainable Products</a>
-        </footer>
-
-    </div>
-
-    <script>
-        // Ensure the DOM is fully loaded before running scripts
-        document.addEventListener('DOMContentLoaded', () => {
-
-            // Helper function for Chart.js tooltips to handle multi-line labels
-            const tooltipTitleCallback = (tooltipItems) => {
-                const item = tooltipItems[0];
-                let label = item.chart.data.labels[item.dataIndex];
-                if (Array.isArray(label)) {
-                    return label.join(' '); // Join array labels with a space
-                }
-                return label;
-            };
-            
-            // Shared Chart.js options to maintain consistency across all charts
-            const sharedChartOptions = {
-                responsive: true, // Charts respond to parent container size changes
-                maintainAspectRatio: false, // Prevents charts from maintaining a fixed aspect ratio
-                plugins: {
-                    legend: {
-                        position: 'bottom', // Legend position
-                        labels: {
-                            font: {
-                                family: 'Inter', // Custom font for legend labels
-                                size: 14,
-                            },
-                              color: '#073B4C', // Color of legend labels
-                        }
-                    },
-                    tooltip: {
-                        callbacks: {
-                            title: tooltipTitleCallback // Custom callback for tooltip titles
-                        },
-                        bodyFont: {
-                            family: 'Inter', // Custom font for tooltip body
-                        },
-                        titleFont: {
-                            family: 'Inter', // Custom font for tooltip title
-                        },
-                    }
-                }
-            };
-
-            // Define a color palette for consistent styling
-            const colors = {
-                coral: '#FF6B6B',
-                yellow: '#FFD166',
-                green: '#06D6A0',
-                blue: '#118AB2',
-                navy: '#073B4C'
-            };
-
-            // Chart 1: Energy Waste (Incandescent vs. LED)
-            const energyWasteCtx = document.getElementById('energyWasteChart').getContext('2d');
-            new Chart(energyWasteCtx, {
-                type: 'doughnut', // Doughnut chart type
-                data: {
-                    labels: ['Energy Wasted (Incandescent)', 'Useful Light'],
-                    datasets: [{
-                        label: 'Energy Efficiency',
-                        data: [90, 10], // Data values for wasted vs. useful light
-                        backgroundColor: [colors.coral, colors.yellow], // Colors for chart segments
-                        borderColor: '#FFFFFF', // Border color between segments
-                        borderWidth: 4, // Border width
-                    }]
-                },
-                options: { ...sharedChartOptions } // Apply shared options
-            });
-
-            // Chart 2: Water Usage (Shower vs. Bath)
-            const waterUsageCtx = document.getElementById('waterUsageChart').getContext('2d');
-            new Chart(waterUsageCtx, {
-                type: 'bar', // Bar chart type
-                data: {
-                    labels: ['5-Min Shower', 'Bath'],
-                    datasets: [{
-                        label: 'Gallons of Water',
-                        data: [25, 70], // Water usage data
-                        backgroundColor: [colors.green, colors.blue], // Colors for bars
-                        borderRadius: 8, // Rounded corners for bars
-                    }]
-                },
-                options: { 
-                    ...sharedChartOptions, // Apply shared options
-                    scales: {
-                        y: {
-                            beginAtZero: true, // Y-axis starts at zero
-                            grid: {
-                                color: '#e0e0e0' // Grid line color
-                            },
-                            ticks: {
-                                color: colors.navy, // Tick label color
-                            }
-                        },
-                        x: {
-                             grid: {
-                                 display: false // Hide X-axis grid lines
-                            },
-                             ticks: {
-                                 color: colors.navy, // Tick label color
-                            }
-                        }
-                    }
-                }
-            });
-
-            // Chart 3: Washing Machine Energy Use (Heating Water vs. Motor)
-            const washerEnergyCtx = document.getElementById('washerEnergyChart').getContext('2d');
-            new Chart(washerEnergyCtx, {
-                type: 'pie', // Pie chart type
-                data: {
-                    labels: ['Heating Water', 'Motor & Other'],
-                    datasets: [{
-                        label: 'Energy Use',
-                        data: [90, 10], // Energy distribution data
-                        backgroundColor: [colors.coral, colors.yellow], // Colors for segments
-                        borderColor: '#FFFFFF', // Border color between segments
-                        borderWidth: 4, // Border width
-                    }]
-                },
-                options: { ...sharedChartOptions } // Apply shared options
-            });
-            
-            // Chart 4: Recycling Energy Savings
-            const recyclingEnergyCtx = document.getElementById('recyclingEnergyChart').getContext('2d');
-            new Chart(recyclingEnergyCtx, {
-                type: 'bar', // Bar chart type
-                data: {
-                    labels: ['Energy to Make New Can', 'Energy Saved by Recycling'],
-                    datasets: [{
-                        label: '% Energy',
-                        data: [100, 95], // Energy percentage data
-                        backgroundColor: [colors.blue, colors.green], // Colors for bars
-                        borderRadius: 8, // Rounded corners for bars
-                    }]
-                },
-                options: { 
-                    ...sharedChartOptions, // Apply shared options
-                      indexAxis: 'y', // Makes the bar chart horizontal
-                    scales: {
-                        x: {
-                            beginAtZero: true, // X-axis starts at zero
-                            grid: {
-                                color: '#e0e0e0' // Grid line color
-                            },
-                             ticks: {
-                                 color: colors.navy, // Tick label color
-                                 callback: function(value) {
-                                     return value + '%' // Add '%' to tick labels
-                                 }
-                            }
-                        },
-                        y: {
-                            grid: {
-                                display: false // Hide Y-axis grid lines
-                            },
-                             ticks: {
-                                 color: colors.navy, // Tick label color
-                            }
-                        }
-                    }
-                }
-            });
-
-        });
-    </script>
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm mt-12">
+        <div class="container mx-auto px-6">
+            &copy; 2025 [Your Name]. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>
